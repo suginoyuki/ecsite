@@ -1,2 +1,2 @@
 ◆テストページURL
-https://www-sundries-jp.pages.dev/
+alendar.google.com/calendar/u/0/r
