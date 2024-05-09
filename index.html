@@ -9,24 +9,61 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <!-- -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <script src="assets/js/main.js"></script>
   <title>ECサイト</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
 </head>
 
 <body id="top-page">
-  <header></header>
+  <header>
+    <h1>ロゴ</h1>
+  </header>
 
   <main class="">
+    <div class="splide" id="thumbnail-carousel" >
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="c-slide__item">
+              <img src="assets/images/mv.png" alt="1">
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="c-slide__item">
+              <img src="assets/images/mv.png" alt="2">
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="c-slide__item">
+              <img src="assets/images/mv.png" alt="3">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+    <div class="splide thumbnail-carousel" aria-label="サムネイルスライダー">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="assets/images/mv.png" alt="1">
+          </li>
+          <li class="splide__slide">
+            <img src="assets/images/mv.png" alt="2">
+          </li>
+          <li class="splide__slide">
+            <img src="assets/images/mv.png" alt="3">
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 
-  <footer></footer>
+  <footer>フッター</footer>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

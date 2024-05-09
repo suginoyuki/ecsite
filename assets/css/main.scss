@@ -5,3 +5,7 @@
 
 // 基本設定＆色の設定
 @use '../../src/scss/variable' as *;
+
+
+@use '../../src/scss/Component/c-container' as *;
+@use '../../src/scss/Component/c-slide' as *;
