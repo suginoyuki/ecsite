@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+
+// リセットCSS
+@use '../../src/scss/base' as *;
+
+// 基本設定＆色の設定
+@use '../../src/scss/variable' as *;
+
+// sectionごとのcss
+@use '../../src/scss/Component/c-mv' as *;
+@use '../../src/scss/Component/c-about' as *;
+@use '../../src/scss/Component/c-scene' as *;
+@use '../../src/scss/Component/c-product' as *;
+
+// Component
+@use '../../src/scss/Component/c-container' as *;
+@use '../../src/scss/Component/c-btn' as *;
+@use '../../src/scss/Component/c-text' as *;
+@use '../../src/scss/Component/c-scroll-down' as *;
+@use '../../src/scss/Component/c-list' as *;
+@use '../../src/scss/Component/c-heading' as *;
+@use '../../src/scss/Component/c-pickup' as *;
+@use '../../src/scss/Component/c-card' as *;
+@use '../../src/scss/Component/c-price' as *;
+@use '../../src/scss/Component/c-fixed-item' as *;
+@use '../../src/scss/Component/c-skill' as *;
+@use '../../src/scss/Component/c-data' as *;
+@use '../../src/scss/Component/c-description' as *;
+@use '../../src/scss/Component/c-field' as *;
+
+// Layout
+@use '../../src/scss/Layout/l-header' as *;
+@use '../../src/scss/Layout/l-footer' as *;
+
+// Utility
+@use '../../src/scss/Utility/u-text' as *;
+@use '../../src/scss/Utility/u-flex' as *;
+@use '../../src/scss/Utility/u-overflow' as *;
+
+// pokemon
+@use '../../src/scss/pokemon/bippa' as *;
+@use '../../src/scss/pokemon/Kodak' as *;
+@use '../../src/scss/pokemon/grass' as *;
+@use '../../src/scss/pokemon/monster-ball' as *;
