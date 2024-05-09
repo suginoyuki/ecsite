@@ -1,2 +1,2 @@
 ◆テストページURL
-alendar.google.com/calendar/u/0/r
+https://20d69206.ecsite.pages.dev/
