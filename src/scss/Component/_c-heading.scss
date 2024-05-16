@@ -1,0 +1,34 @@
+@use '../../scss/variable' as *;
+
+.c-heading-primary {
+  line-height: 1.4;
+  font-size: min(2.4rem, calc(24 / 375 * 100vw));
+  font-weight: normal;
+
+  @include over(min-md) {
+    font-size: min(3rem, calc(30 / 375 * 100vw));
+  }
+}
+
+.c-heading-col {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-size: min(2.4rem, calc(24 / 375 * 100vw));
+
+  @include over(min-md) {
+    font-size: min(3rem, calc(30 / 375 * 100vw));
+  }
+
+  // .c-heading-col__jp
+  &__jp {
+    font-size: calc(16 / 30 * 1em);
+    font-weight: normal;
+  }
+
+  // .c-heading-col__en
+  &__en {
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+}

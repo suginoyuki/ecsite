@@ -1,13 +1,15 @@
 /*
   色の設定
 */
-$color-theme: #22af6a;
-$color-theme-accent: #fffaad;
-$color-gray-0: #ffffff;
-$color-gray-100: #000000;
-$color-gray-EEEEEE: #eeeeee;
-$color-gray-555555: #555555;
-$color-text: #333333;
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text: #333333;
+  --color-gray: #d9d9d9;
+  --color-accent: #2439f2;
+
+  --duration: 0.4s;
+}
 
 /*
   フォントファミリー
