@@ -1,5 +1,10 @@
 @use '../../scss/variable' as *;
 
+.c-list {
+  padding-left: 0;
+  list-style: none;
+}
+
 .c-list-category {
   display: flex;
   flex-wrap: wrap;
@@ -75,6 +80,93 @@
           box-shadow: 0 0 0 2px var(--color-black) inset;
         }
       }
+    }
+  }
+}
+
+.c-list-rank {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -1rem;
+
+  @include over(min-lg) {
+    margin: -1.5rem;
+  }
+
+  // .c-list-rank__item
+  &__item {
+    width: calc(100% / 2);
+    padding: 1rem;
+
+    @include over(min-lg) {
+      width: calc(100% / 4);
+      padding: 1.5rem;
+    }
+  }
+
+  // .c-list-rank__link
+  &__link {
+    position: relative;
+    display: block;
+    background: var(--color-gray-f2f2f2);
+    transition: text-decoration 0.3s ease-in-out;
+    z-index: 0;
+
+    @media (any-hover: hover) {
+      &:hover,
+      &:focus-visible {
+        text-decoration: none;
+      }
+    }
+  }
+
+  // .c-list-rank__num
+  &__num {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    font-size: 1.2rem;
+    line-height: 1;
+    background: var(--color-white);
+    border-radius: 50%;
+    z-index: 1;
+
+    @include over(min-md) {
+      width: 2.5rem;
+    }
+  }
+
+  // .c-list-rank__crown
+  &__crown {
+  }
+
+  // .c-list-rank__thumb
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      display: block;
+      padding-top: calc(200 / 240 * 100%);
+    }
+
+    // .c-list-rank__thumb-img
+    &-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
     }
   }
 }

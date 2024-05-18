@@ -13,22 +13,31 @@
 .c-heading-col {
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
   font-size: min(2.4rem, calc(24 / 375 * 100vw));
 
   @include over(min-md) {
     font-size: min(3rem, calc(30 / 375 * 100vw));
   }
 
-  // .c-heading-col__jp
-  &__jp {
+  // .c-heading-col__main
+  &__main {
     font-size: calc(16 / 30 * 1em);
     font-weight: normal;
   }
 
-  // .c-heading-col__en
-  &__en {
+  // .c-heading-col__sub
+  &__sub {
     text-transform: uppercase;
     line-height: 1.4;
+  }
+
+  // .c-heading-col--small
+  &--small {
+    font-size: 2rem;
+
+    // .c-heading-col__main
+    &__main {
+      font-size: 1rem;
+    }
   }
 }
