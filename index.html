@@ -230,19 +230,62 @@
               <a href="/" class="c-list-rank__link">
                 <span class="c-list-rank__crown c-list-rank__num">1</span>
 
-                <figure class="c-list-rank__thumb">
-                  <img src="/assets/images/mv.png" alt="" class="c-list-rank__thumb-img">
-                </figure>
+                <div class="c-list-rank__thumb">
+                  <img class="c-list-rank__thumb-img" src="/assets/images/img-profile.jpg">
+                </div>
 
-                <div class="c-list-rank_textarea">
+                <div class="c-list-rank__textarea">
                   <header class="c-heading-col c-heading-col--small">
                     <h3 class="c-heading-col__main">ジップパーカー</h3>
                     <span class="c-heading-col__sub">brand-name</span>
                   </header>
 
                   <span class="c-price">¥5,300</span>
+
+                  <ul class="c-list c-list-rank__color u-mt-10">
+                    <li class="c-list-rank__color-item" style="background: #f00;"></li>
+                    <li class="c-list-rank__color-item" style="background: #0f0;"></li>
+                    <li class="c-list-rank__color-item" style="background: #00f;"></li>
+                  </ul>
                 </div>
               </a>
+            </li>
+
+
+            <!-- クリックしたら画像が変わるやつ -->
+            <li class="c-list-rank__item">
+              <div class="c-list-rank__link">
+                <span class="c-list-rank__crown c-list-rank__num">1</span>
+
+                <div class="c-list-rank__thumb">
+                  <img class="preview c-list-rank__thumb-img u-b" id="preview1" src="/assets/images/hororu_01.jpg">
+                  <img class="preview c-list-rank__thumb-img" id="preview2" src="/assets/images/img-profile.jpg">
+                  <img class="preview c-list-rank__thumb-img" id="preview3" src="/assets/images/img-album.jpg">
+                </div>
+
+                <div class="c-list-rank_textarea">
+                  <header class="c-heading-col c-heading-col--small u-mb-10">
+                    <h3 class="c-heading-col__main">ジップパーカー</h3>
+                    <span class="c-heading-col__sub">brand-name</span>
+                  </header>
+
+                  <span class="c-price">¥5,300</span>
+
+                  <ul class="c-list u-flex">
+                    <li>
+                      <button class="js-change" data-preview-id="preview1"></button>
+                    </li>
+
+                    <li>
+                      <button class="js-change" data-preview-id="preview2"></button>
+                    </li>
+
+                    <li>
+                      <button class="js-change" data-preview-id="preview3"></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ol>
         </div>
@@ -250,7 +293,9 @@
     </section>
   </main>
 
+
   <footer>フッター</footer>
+
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
   <script src="assets/js/main.js"></script>
 

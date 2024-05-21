@@ -31,3 +31,29 @@ document.addEventListener("DOMContentLoaded", function () {
   main.mount();
   thumbnails.mount();
 });
+
+
+document.querySelectorAll('.js-change').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    // すべてのコンテンツ要素からクラスを削除
+    document.querySelectorAll('.preview').forEach((content) => {
+      content.classList.remove('js-active')
+    })
+
+    // すべてのボタンからクラスを削除
+    document.querySelectorAll('.js-change').forEach((button) => {
+      button.classList.remove('btn-active')
+    })
+
+    // クリックされたボタンに対応するコンテンツ要素にクラスを追加
+    const contentId = btn.getAttribute('data-preview-id')
+    const content = document.getElementById(contentId)
+
+    if (content) {
+      content.classList.add('js-active')
+    }
+
+    // クリックされたボタンにクラスを追加
+    btn.classList.add('btn-active')
+  })
+})

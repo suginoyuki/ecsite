@@ -176,10 +176,22 @@
 }
 
 // flex
+.u-flex {
+  display: flex;
+}
+
 .u-justify-center {
   justify-content: center;
 }
 
 .u-items-center {
   align-items: center;
+}
+
+.u-bg-black {
+  background: var(--color-black);
+}
+
+.u-b {
+  display: block;
 }
